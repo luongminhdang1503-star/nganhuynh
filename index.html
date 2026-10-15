@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ngân Huỳnh ✨ Giới thiệu bản thân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Màn hình chờ -->
+  <div id="loader"><div class="loader-heart">💗</div><p>Đang tải điều dễ thương...</p></div>
+  <div id="progress"></div>
+  <button id="theme" aria-label="Đổi giao diện">🌙</button>
+
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <canvas id="fx"></canvas>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="avatar-wrap" id="avatar" title="Bấm vào mình đi!">
+        <div class="ring r1"></div><div class="ring r2"></div>
+        <div class="avatar"><img src="avatar.jpg" alt="Ảnh Ngân"></div>
+        <span class="orbit o1">🌸</span><span class="orbit o2">⭐</span><span class="orbit o3">💖</span>
+      </div>
+      <p class="hi">Xin chào, mình là 👋</p>
+      <h1 class="name" aria-label="Huỳnh Thị Ngân Huỳnh"></h1>
+      <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+      <span class="tag">🎀 Học sinh lớp 10T2</span>
+      <div class="scroll-hint">Lướt xuống nhé<span>⌄</span></div>
+    </section>
+
+    <!-- THÔNG TIN -->
+    <section>
+      <h2 class="reveal" data-anim="zoom">📌 Thông tin của mình</h2>
+      <div class="grid">
+        <div class="card tilt reveal" data-anim="left"><span class="e">🌸</span><small>Họ và tên</small><b>Huỳnh Thị Ngân Huỳnh</b></div>
+        <div class="card tilt reveal" data-anim="up" data-delay="1"><span class="e">🏫</span><small>Lớp</small><b>10T2</b></div>
+        <div class="card tilt reveal" data-anim="right" data-delay="2"><span class="e">🎂</span><small>Tuổi</small><b><span class="count" data-to="15">0</span> tuổi</b></div>
+      </div>
+    </section>
+
+    <!-- CON SỐ -->
+    <section>
+      <div class="stats">
+        <div class="stat reveal" data-anim="zoom"><b class="count" data-to="100" data-suffix="%">0</b><small>Nhiệt huyết</small></div>
+        <div class="stat reveal" data-anim="zoom" data-delay="1"><b class="count" data-to="999" data-suffix="+">0</b><small>Ý tưởng sáng tạo</small></div>
+        <div class="stat reveal" data-anim="zoom" data-delay="2"><b class="count" data-to="24" data-suffix="/7">0</b><small>Luôn vui vẻ</small></div>
+      </div>
+    </section>
+
+    <!-- TÍNH CÁCH -->
+    <section>
+      <h2 class="reveal" data-anim="zoom">💫 Tính cách của mình</h2>
+      <div class="grid">
+        <div class="card tilt reveal" data-anim="left"><span class="e">⚡</span><h3>Năng động</h3><p>Luôn tràn đầy năng lượng.</p><div class="bar"><i data-w="95"></i></div></div>
+        <div class="card tilt reveal" data-anim="right" data-delay="1"><span class="e">🎨</span><h3>Sáng tạo</h3><p>Nhiều ý tưởng mới lạ.</p><div class="bar"><i data-w="92"></i></div></div>
+        <div class="card tilt reveal" data-anim="left"><span class="e">📚</span><h3>Học bá</h3><p>Chăm chỉ và thông minh.</p><div class="bar"><i data-w="98"></i></div></div>
+        <div class="card tilt reveal" data-anim="right" data-delay="1"><span class="e">🤝</span><h3>Có trách nhiệm</h3><p>Đáng tin cậy, làm gì cũng nghiêm túc.</p><div class="bar"><i data-w="96"></i></div></div>
+        <div class="card tilt reveal wide" data-anim="up"><span class="e">😄</span><h3>Vui vẻ</h3><p>Mang tiếng cười đến cho mọi người.</p><div class="bar"><i data-w="100"></i></div></div>
+      </div>
+    </section>
+
+    <!-- TRẠNG THÁI (cuối trang) -->
+    <section>
+      <h2 class="reveal" data-anim="zoom">💘 Trạng thái</h2>
+      <div class="card love reveal" data-anim="zoom" id="love">
+        <div class="heart">💗</div>
+        <h3>Đang hẹn hò với MĐ</h3>
+        <p>Hạnh phúc từng ngày bên nhau 🥰 <br><small>(bấm vào để thả tim)</small></p>
+      </div>
+      <footer class="reveal" data-anim="up">Made with 💖 by Ngân Huỳnh</footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
